@@ -1,0 +1,84 @@
+/* Top bar styling */
+.top-bar {
+  background-color: #004d73;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.top-bar p {
+  margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack the logo and links vertically */
+  background-color: #004d73;
+  padding: 1rem 2rem; /* Padding to ensure some space around */
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays on top of other elements */
+  transition: all 0.3s ease; /* Smooth transition when scrolling */
+}
+
+.navbar.scrolled {
+  padding: 1rem 2rem 1rem 2rem; /* Retain the padding when scrolled */
+  background-color: #004d73; /* Optionally change background color when scrolled */
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+  width: 100%; /* Full width for the navbar */
+}
+
+.navbar-logo img {
+  width: 225px;
+  height: auto;
+}
+
+/* Navbar links and info container (centered) */
+.navbar-links-container {
+  display: flex;
+  justify-content: center; /* Center the links */
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem; /* Adds space between the logo and links */
+}
+
+/* Centering the links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+/* Styling for each link */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Adjusting content below navbar */
+body {
+  margin-top: 0; /* No margin for body */
+}
+
+/* When scrolled down, only show links and hide the logo */
+.navbar.scrolled .navbar-logo {
+  display: none; /* Hide the logo when scrolled */
+}
+
+.navbar.scrolled .top-bar {
+  display: none; /* Hide the address, phone, and email when scrolled */
+}

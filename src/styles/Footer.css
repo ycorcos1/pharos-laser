@@ -1,0 +1,36 @@
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;  /* Centers the text horizontally */
+  display: flex;
+  flex-direction: column;  /* Ensures items are stacked vertically */
+  justify-content: center;  /* Vertically centers the content */
+  align-items: center;  /* Horizontally centers the content */
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 150px; /* Adjust for desired size */
+  height: auto;
+  max-width: 100%; /* Make it responsive */
+}
+
+.footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 1rem;
+}

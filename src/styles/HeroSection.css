@@ -1,0 +1,60 @@
+/* HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden; /* Ensure that content stays within bounds */
+  margin-top: 11.5rem; /* Adjust this margin to be the height of your navbar */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  z-index: -1; /* Places the background image behind the content */
+  transition: background-image 2s ease-in-out; /* Smooth transition between images */
+  
+  /* Light blue overlay */
+  /* background-color: rgba(0, 188, 212, 0.4);  */
+  /* Adds a light blue color overlay */
+  /* background-blend-mode: overlay;  */
+  /* Blends the image with the overlay */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1; /* Ensure the content is always on top of the background */
+  color: white;
+  padding: 0 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .cta-button {
+  padding: 0.8rem 2rem;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.hero-section .cta-button:hover {
+  background-color: #0097a7;
+}

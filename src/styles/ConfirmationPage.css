@@ -1,0 +1,70 @@
+/* ContactForm.css */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-header h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* ConfirmationPage.css */
+  .confirmation-page {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .confirmation-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .confirmation-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .home-link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .home-link:hover {
+    text-decoration: underline;
+  }
+  

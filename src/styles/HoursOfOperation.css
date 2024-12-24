@@ -1,0 +1,23 @@
+/* HoursOfOperation.css */
+.hours-of-operation {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin-top: 2rem;
+  }
+  
+  .hours-of-operation h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hours-of-operation ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hours-of-operation li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
