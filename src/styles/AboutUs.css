@@ -1,60 +1,58 @@
 /* AboutUs.css */
-
 .about-us-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-  }
-  
-  .about-us-container h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-us-container p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .laser-description {
-    display: flex;
-    flex-direction: row;      /* Aligns image and text side by side */
-    justify-content: center;  /* Centers content horizontally */
-    align-items: center;      /* Aligns content vertically */
-    gap: 2rem;                /* Adds space between image and text */
-    max-width: 1200px;         /* Ensures the section doesn't get too wide */
-    width: 100%;
-    margin-top: 2rem;
-  }
-  
-  .laser-image-placeholder {
-    width: 50%;                /* Placeholder for the image */
-    max-width: 400px;          /* Limits the width of the image */
-    height: auto;
-    background-color: #ddd;   /* Light grey background for the placeholder */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .laser-info {
-    width: 50%;                /* Allows text to take up remaining space */
-    text-align: left;          /* Aligns text to the left */
-  }
-  
-  .laser-info h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .laser-info p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.laser-description {
+  display: flex;
+  flex-direction: row;      /* Aligns image and text side by side */
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;      /* Aligns content vertically */
+  gap: 2rem;                /* Adds space between image and text */
+  max-width: 1200px;         /* Ensures the section doesn't get too wide */
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.laser-image-placeholder {
+  width: 50%;                /* Placeholder for the image */
+  max-width: 400px;          /* Limits the width of the image */
+  height: auto;
+  background-color: #ddd;   /* Light grey background for the placeholder */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laser-info {
+  width: 50%;                /* Allows text to take up remaining space */
+  text-align: left;          /* Aligns text to the left */
+}
+
+.laser-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.laser-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}

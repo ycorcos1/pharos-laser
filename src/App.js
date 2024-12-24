@@ -8,9 +8,8 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import ConfirmationPage from "./components/ConfirmationPage";
 import HoursOfOperation from "./components/HoursOfOperation"; // Import HoursOfOperation
-
+import "./styles/Responsiveness.css";
 import "./App.css"; // Global styles
-// import './Responsive.css'; // Responsive styles
 
 const App = () => {
   return (

@@ -21,11 +21,11 @@
   z-index: -1; /* Places the background image behind the content */
   transition: background-image 2s ease-in-out; /* Smooth transition between images */
   
-  /* Light blue overlay */
+    /* Light blue overlay */
   /* background-color: rgba(0, 188, 212, 0.4);  */
-  /* Adds a light blue color overlay */
+    /* Adds a light blue color overlay */
   /* background-blend-mode: overlay;  */
-  /* Blends the image with the overlay */
+    /* Blends the image with the overlay */
 }
 
 .hero-content {
