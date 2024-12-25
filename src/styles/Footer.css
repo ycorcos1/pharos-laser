@@ -1,36 +1,40 @@
 /* Footer.css */
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 2rem 0;
-  text-align: center;  /* Centers the text horizontally */
-  display: flex;
-  flex-direction: column;  /* Ensures items are stacked vertically */
-  justify-content: center;  /* Vertically centers the content */
-  align-items: center;  /* Horizontally centers the content */
-}
-
-.footer-logo {
-  margin-bottom: 1rem;
-}
-
-.footer-logo img {
-  width: 150px; /* Adjust for desired size */
-  height: auto;
-  max-width: 100%; /* Make it responsive */
-}
-
-.footer a {
-  color: #00bcd4;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.footer p {
-  font-size: 1rem;
-  color: #ccc;
-  margin-top: 1rem;
-}
+    background-color: #f7f9fb; /* Light background to match the overall theme */
+    color: #333; /* Darker text for better readability */
+    padding: 3rem 0; /* Increased padding for a spacious feel */
+    text-align: center;  /* Centers the text horizontally */
+    display: flex;
+    flex-direction: column;  /* Ensures items are stacked vertically */
+    justify-content: center;  /* Vertically centers the content */
+    align-items: center;  /* Horizontally centers the content */
+    border-top: 1px solid #e0e0e0; /* Subtle border on top to separate it from other sections */
+  }
+  
+  .footer-logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-logo img {
+    width: 150px; /* Adjust for desired size */
+    height: auto;
+    max-width: 100%; /* Make it responsive */
+  }
+  
+  .footer a {
+    color: rgba(0, 188, 212, 0.7); /* Light blue accent color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #0088cc; /* Darker blue on hover */
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: #777; /* Lighter gray for less emphasis */
+    margin-top: 1rem;
+  }
+  

@@ -1,85 +1,96 @@
-/* Navbar.css */
-/* Top bar styling */
-.top-bar {
-  background-color: #004d73;
-  color: white;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.top-bar p {
-  margin: 0;
-}
-
-/* Navbar styling */
+/* Navbar Styling */
 .navbar {
   display: flex;
-  flex-direction: column; /* Stack the logo and links vertically */
-  background-color: #004d73;
-  padding: 1rem 2rem; /* Padding to ensure some space around */
+  flex-direction: column;
+  background-color: white; /* White background for the navbar */
+  padding: 0.5rem 2rem; /* Reduce top margin slightly */
   position: fixed; /* Keeps navbar at the top */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure navbar stays on top of other elements */
-  transition: all 0.3s ease; /* Smooth transition when scrolling */
+  z-index: 1000; /* Ensure navbar stays on top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for effects */
 }
 
+/* Styling when navbar is scrolled */
 .navbar.scrolled {
-  padding: 1rem 2rem 1rem 2rem; /* Retain the padding when scrolled */
-  background-color: #004d73; /* Optionally change background color when scrolled */
+  padding: 0.5rem 2rem;
+  background-color: white;
 }
 
+/* Top Bar (Address, Phone, Email) */
+.top-bar {
+  display: flex;
+  justify-content: center; /* Center align the content */
+  align-items: center;
+  font-family: 'Poppins', sans-serif; /* Modern and appealing font */
+  font-size: 1rem; /* Slightly larger font size */
+  color: rgba(0, 188, 212, 0.7); /* Match light blue color of the button */
+  gap: 2rem; /* Increased spacing between items */
+  padding: 0.5rem 0; /* Add vertical spacing */
+}
+
+.top-bar p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Logo Section */
 .navbar-logo {
   display: flex;
   justify-content: flex-start; /* Align logo to the left */
-  width: 100%; /* Full width for the navbar */
+  width: 100%;
+  padding: 0.5rem 0; /* Add spacing for the logo */
 }
 
 .navbar-logo img {
-  width: 225px;
+  width: 180px; /* Adjust logo size */
   height: auto;
 }
 
-/* Navbar links and info container (centered) */
+/* Navbar Links */
 .navbar-links-container {
   display: flex;
-  justify-content: center; /* Center the links */
+  justify-content: center; /* Center the navigation links */
   align-items: center;
   width: 100%;
-  margin-top: 1rem; /* Adds space between the logo and links */
+  margin-top: 1rem; /* Add a little more space above links */
 }
 
-/* Centering the links */
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 3.5rem; /* Further increased spacing between links */
   margin: 0;
+  padding: 0;
 }
 
-/* Styling for each link */
 .navbar-links a {
-  color: white;
+  color: rgba(0, 188, 212, 0.7); /* Match light blue color of the button */
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Clean and appealing font */
+  font-size: 1.2rem; /* Slightly larger font size */
+  transition: color 0.3s ease; /* Smooth transition for color */
 }
 
 .navbar-links a:hover {
-  text-decoration: underline;
+  color: rgba(0, 188, 212, 1); /* Full opacity on hover */
+  /* Removed font-size change */
 }
 
 /* Adjusting content below navbar */
 body {
-  margin-top: 0; /* No margin for body */
+  margin-top: 0; /* Reset top margin for body content */
 }
 
-/* When scrolled down, only show links and hide the logo */
+/* Hide logo and top-bar on scroll */
 .navbar.scrolled .navbar-logo {
-  display: none; /* Hide the logo when scrolled */
+  display: none;
 }
 
 .navbar.scrolled .top-bar {
-  display: none; /* Hide the address, phone, and email when scrolled */
+  display: none;
 }

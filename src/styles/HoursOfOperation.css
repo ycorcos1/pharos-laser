@@ -1,57 +1,69 @@
 /* HoursOfOperation.css */
 .hours-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: #e0f7fa; /* Light blue background */
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap; /* Allow flexibility for responsiveness */
-}
-
-.hours {
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Adjusted gap between each day */
-}
-
-.day {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.day-name {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #00796b; /* Teal color for day names */
-  margin-bottom: 0.2rem;
-}
-
-.day-hours {
-  font-size: 0.9rem;
-  color: #004d40; /* Darker teal for hours */
-}
-
-.divider {
-  height: 2rem;
-  width: 1px;
-  background-color: #004d40; /* Divider color matching the theme */
-  margin: 0 1rem;
-}
-
-@media (max-width: 768px) {
-  .hours-container {
-    flex-direction: column;
-  }
-  .hours {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    padding: 1.5rem 2rem;
+    background-color: #f7f9fb; /* Light background with a soft touch */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling when content overflows */
     width: 100%;
-    height: 1px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
-}
+  
+  .hours {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Adjusted gap for a more spacious look */
+    min-width: max-content;
+  }
+  
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 180px; /* Prevent elements from shrinking */
+  }
+  
+  .day-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00aaff; /* Light blue color for day names */
+    margin-bottom: 0.2rem;
+  }
+  
+  .day-hours {
+    font-size: 1rem;
+    color: rgba(0, 188, 212, 0.7); /* Darker teal for hours */
+  }
+  
+  .divider {
+    height: 2rem;
+    width: 1px;
+    background-color: #00aaff; /* Divider color matching the theme */
+    margin: 0 1rem;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .hours-container {
+      padding: 1rem;
+    }
+  
+    .hours {
+      gap: 1rem;
+    }
+  
+    .day {
+      min-width: 140px;
+    }
+  
+    .divider {
+      width: 100%;
+      height: 1px;
+    }
+  }
+  

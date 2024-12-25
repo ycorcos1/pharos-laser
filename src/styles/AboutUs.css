@@ -5,54 +5,79 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f7f9fb;
+  color: #00aaff; /* Light blue text color to match navbar and hero section */
   text-align: center;
+  font-family: 'Poppins', sans-serif; /* Match font to navbar and hero section */
 }
 
 .about-us-container h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: rgba(0, 188, 212, 0.7); /* Purple color for heading */
 }
 
 .about-us-container p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #444; /* Darker text for paragraphs */
 }
 
 .laser-description {
   display: flex;
-  flex-direction: row;      /* Aligns image and text side by side */
-  justify-content: center;  /* Centers content horizontally */
-  align-items: center;      /* Aligns content vertically */
-  gap: 2rem;                /* Adds space between image and text */
-  max-width: 1200px;         /* Ensures the section doesn't get too wide */
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.laser-image-placeholder {
-  width: 50%;                /* Placeholder for the image */
-  max-width: 400px;          /* Limits the width of the image */
-  height: auto;
-  background-color: #ddd;   /* Light grey background for the placeholder */
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.laser-image {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+}
+
+.laser-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .laser-info {
-  width: 50%;                /* Allows text to take up remaining space */
-  text-align: left;          /* Aligns text to the left */
+  width: 50%;
+  text-align: left;
 }
 
 .laser-info h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: rgba(0, 188, 212, 0.7); /* Purple color for heading */
 }
 
 .laser-info p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
+  color: #777;
+}
+
+.laser-info p:last-child {
+  margin-bottom: 0;
+}
+
+.laser-info h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: rgba(0, 188, 212, 0.7); /* Light blue accent */
+  margin-top: 0.5rem;
 }

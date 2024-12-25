@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AboutUs.css'; // Styling for About Us section
+import pharosA from '../imgs/pharosA.jpg'; // Importing the actual image
 
 const AboutUs = () => {
   return (
@@ -19,9 +20,8 @@ const AboutUs = () => {
 
       {/* Pharos 308nm Laser Description Section */}
       <div className="laser-description">
-        <div className="laser-image-placeholder">
-          {/* Placeholder for the laser image */}
-          <img src="path-to-image.jpg" alt="Pharos Laser" />
+        <div className="laser-image">
+          <img src={pharosA} alt="Pharos 308nm Laser" />
         </div>
         
         <div className="laser-info">

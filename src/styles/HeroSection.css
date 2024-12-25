@@ -1,12 +1,13 @@
 /* HeroSection.css */
 .hero-section {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   position: relative;
-  overflow: hidden; /* Ensure that content stays within bounds */
-  margin-top: 11.5rem; /* Adjust this margin to be the height of your navbar */
+  overflow: hidden;
+  margin-top: 12rem; 
+  /* Prevent overlap with navbar */
 }
 
 .hero-background {
@@ -15,46 +16,71 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover; /* Ensure the background image covers the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  z-index: -1; /* Places the background image behind the content */
-  transition: background-image 2s ease-in-out; /* Smooth transition between images */
-  
-    /* Light blue overlay */
-  /* background-color: rgba(0, 188, 212, 0.4);  */
-    /* Adds a light blue color overlay */
-  /* background-blend-mode: overlay;  */
-    /* Blends the image with the overlay */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: background-image 2s ease-in-out; /* Smooth slideshow transitions */
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7); /* Dim the background */
+  /* Remove the background color and blend mode */
 }
 
 .hero-content {
   position: relative;
   text-align: center;
-  z-index: 1; /* Ensure the content is always on top of the background */
+  z-index: 1;
   color: white;
   padding: 0 2rem;
 }
 
 .hero-section h1 {
-  font-size: 3rem;
+  font-size: 5rem; /* Make header bigger */
   margin-bottom: 1rem;
+  color: white; /* White font color for heading */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
 }
 
 .hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+  color: white; /* White font color for paragraph */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
 }
 
 .hero-section .cta-button {
-  padding: 0.8rem 2rem;
-  background-color: #00bcd4;
-  border: none;
+  padding: 1rem 2rem; /* Adjust padding for better size */
+  background-color: rgba(0, 188, 212, 0.3); /* More transparent light blue */
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  border: none; /* Ensures no border */
+  border-radius: 30px; /* More roundness */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add depth to button */
 }
 
 .hero-section .cta-button:hover {
-  background-color: #0097a7;
+  background-color: rgba(0, 188, 212, 0.6); /* Slightly less transparent on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem; /* Adjust header size for smaller screens */
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
 }

@@ -1,67 +1,70 @@
 /* ContactForm.css */
 .contact-form-section {
-  padding: 2rem;
-  background-color: #f4f4f4; /* Light background color for the section */
-}
-
-.contact-form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Centers content vertically */
-  align-items: center;      /* Centers content horizontally */
-  background-color: #f4f4f4;
-  padding: 0 2rem;           /* Adds padding on the left and right */
-}
-
-.contact-header {
-  text-align: center;  /* Centers the title text */
-}
-
-.contact-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;     /* Stack form elements vertically */
-  gap: 1rem;                  /* Adds space between form elements */
-  max-width: 500px;           /* Limits the width of the form */
-  width: 100%;                /* Ensures full width of the form up to max-width */
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 8px;         /* Rounded corners for the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
-.contact-form label {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;      /* Adds space below each label */
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;         /* Rounded corners for the input fields */
-}
-
-.contact-form textarea {
-  height: 150px;              /* Sets a height for the textarea */
-}
-
-.contact-form button {
-  padding: 1rem 2rem;
-  background-color: #004d73;  /* Button color */
-  color: white;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.contact-form button:hover {
-  background-color: #0097a7;  /* Darker shade on hover */
-}
+    padding: 2rem;
+    background-color: #f7f9fb; /* Light background to match the new style */
+  }
+  
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers content vertically */
+    align-items: center;      /* Centers content horizontally */
+    background-color: #ffffff; /* White background for the form container */
+    padding: 2rem;           /* Adds padding around the form */
+    border-radius: 10px;     /* Rounded corners for a sleek look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 188, 212, 0.7); /* Dark gray for the header */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;     /* Stack form elements vertically */
+    gap: 1.5rem;                /* Increased gap for better spacing */
+    max-width: 500px;           /* Limits the width of the form */
+    width: 100%;                /* Ensures full width of the form up to max-width */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;         /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444; /* Darker gray for labels */
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;         /* Rounded corners for input fields */
+    background-color: #f9f9f9; /* Slightly lighter background for inputs */
+  }
+  
+  .contact-form textarea {
+    height: 150px;              /* Sets a height for the textarea */
+  }
+  
+  .contact-form button {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 188, 212, 0.7);  /* Light blue button */
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0088cc;  /* Darker blue on hover */
+  }
+  

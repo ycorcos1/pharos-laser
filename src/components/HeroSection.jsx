@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/HeroSection.css';
-import pharos1 from '../imgs/pharos1.jpg'
-import pharos2 from '../imgs/pharos2.jpg'
-import pharos3 from '../imgs/pharos3.jpg'
-import pharos4 from '../imgs/pharos4.jpg'
-import pharos5 from '../imgs/pharos5.jpg'
+import pharos1 from '../imgs/pharos1.jpg';
+import pharos2 from '../imgs/pharos2.jpg';
+import pharos3 from '../imgs/pharos3.jpg';
+import pharos4 from '../imgs/pharos4.jpg';
+import pharos5 from '../imgs/pharos5.jpg';
 
 const images = [
     pharos1,
@@ -28,12 +28,19 @@ const HeroSection = () => {
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, []);
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about-us');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
         <h1>Laser Repair Experts</h1>
         <p>We provide the best solutions for your laser equipment.</p>
-        <button className="cta-button">Learn More</button>
+        <button className="cta-button" onClick={scrollToAbout}>Learn More</button>
       </div>
       <div className="hero-background" style={{ backgroundImage: `url(${images[currentIndex]})` }}></div>
     </section>
